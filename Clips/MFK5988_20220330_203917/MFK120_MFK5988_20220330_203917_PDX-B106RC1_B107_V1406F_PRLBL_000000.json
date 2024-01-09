@@ -1,0 +1,1549 @@
+{
+  "metadata": {
+    "comment": "",
+    "campaign": "VALIDATION_DATA",
+    "damage_events": "NO_EVENT",
+    "driver_id": "1293",
+    "driving_side": "LEFT_DRIVING_SIDE",
+    "steering_wheel_side": "LEFT_HAND_DRIVE",
+    "camera_serial_number": "DCB2301",
+    "vehicle_id": "WAUZZZF19KD036988",
+    "extrinsic": {
+      "__comment": "Global referencepoint is related to middle of rear axle",
+      "antennas": {
+        "antenna_left": {
+          "origin": "[0.74667,0.42888,1.32384]",
+          "yaw": "0",
+          "roll": "0",
+          "pitch": "0"
+        },
+        "antenna_right": {
+          "origin": "[0.74680,-0.42982,1.32111]",
+          "yaw": "0",
+          "roll": "0",
+          "pitch": "0"
+        }
+      },
+      "cameras": {
+        "camera_front_1": {
+          "origin": "[2.04748,0.00290,1.1268]",
+          "yaw": "0",
+          "roll": "0",
+          "pitch": "-0.635"
+        }
+      },
+      "imu": {
+        "origin": "[0.425,-0.109,0.197]",
+        "yaw": "-0.945",
+        "roll": "0",
+        "pitch": "0"
+      },
+      "lidars": {
+        "lidar_left": {
+          "origin": "[1.74754,0.49979,1.35072]",
+          "yaw": "0",
+          "roll": "15",
+          "pitch": "0"
+        },
+        "lidar_right": {
+          "origin": "[1.74936,-0.50345,1.34797]",
+          "yaw": "0",
+          "roll": "-15",
+          "pitch": "0"
+        }
+      }
+    },
+    "governance": {
+      "location": "Ingolstadt",
+      "pool": "audi_mfk5_camera"
+    },
+    "rear_axle_steering": "YES",
+    "logger_sw_version": "5.01.F070",
+    "logger": "X2E",
+    "ros_visualization_version": "5.2.0",
+    "meta_data_version": "1.2.0",
+    "vehicle_number_plate": "AB-ME 7700",
+    "group_project_name": "MFK5",
+    "vehicle_region": "EUROPE_EU",
+    "brand": "AUDI",
+    "tire_type": "WINTER_TIRE",
+    "windshield_number_front": "8",
+    "vehicle_load_change": "BAGGAGE_REMOVED",
+    "group_vehicle_number": "AU416000000",
+    "workshop_events": "NO_EVENT",
+    "windshield_type_front": "GREEN_GLASS_HUD",
+    "country": "IE",
+    "region": "EUROPE_EU",
+    "test_track_id": "mfk5",
+    "windshield_serial_number_front": "4M8 845 099 B",
+    "vehicle_platform": "PPE",
+    "time": {
+      "timestamp": 1648672758827779054,
+      "domain": "UTC",
+      "confidence_class": "AUTO_RETRIEVAL"
+    },
+    "suspension_system": "FAST_ACTIVE_SUSPENSION",
+    "position": {
+      "source": "GPS",
+      "domain": "WGS84",
+      "confidence_class": "AUTO_RETRIEVAL"
+    },
+    "model": "Q8",
+    "us_state": "",
+    "headlight_type": "LED",
+    "CarryoverFromMFK5": true
+  },
+  "prelabels": [
+    {
+      "category": "WeatherCloudiness",
+      "postion_coordinates": {
+        "latitude": 0,
+        "elevation": 0,
+        "longitude": 0
+      },
+      "timestamp": 1648672848787875890,
+      "clipnumber": -1,
+      "label": "CL_PARTIALLY_CLOUDY",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 6258
+    },
+    {
+      "category": "WeatherPrecipitation",
+      "postion_coordinates": {
+        "latitude": 0,
+        "elevation": 0,
+        "longitude": 0
+      },
+      "timestamp": 1648672851257777929,
+      "clipnumber": -1,
+      "label": "PR_NO",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 6334
+    },
+    {
+      "category": "WeatherLight",
+      "postion_coordinates": {
+        "latitude": 0,
+        "elevation": 0,
+        "longitude": 0
+      },
+      "timestamp": 1648672853297749042,
+      "clipnumber": -1,
+      "label": "LI_DARK_NIGHT",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 6404
+    },
+    {
+      "category": "ConditionsRoadCategory",
+      "postion_coordinates": {
+        "latitude": 0,
+        "elevation": 0,
+        "longitude": 0
+      },
+      "timestamp": 1648672866987740993,
+      "clipnumber": -1,
+      "label": "RC_COUNTRY_ROADS",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 6910
+    },
+    {
+      "category": "ConditionsRoadType",
+      "postion_coordinates": {
+        "latitude": 0,
+        "elevation": 0,
+        "longitude": 0
+      },
+      "timestamp": 1648672872469465970,
+      "clipnumber": -1,
+      "label": "RT_PAVED",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 7088
+    },
+    {
+      "category": "ConditionsRoadState",
+      "postion_coordinates": {
+        "latitude": 0,
+        "elevation": 0,
+        "longitude": 0
+      },
+      "timestamp": 1648672873599096059,
+      "clipnumber": -1,
+      "label": "ROAD_DRY",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 7124
+    },
+    {
+      "category": "ConditionsRoadStructure",
+      "postion_coordinates": {
+        "latitude": 53.50079360518215,
+        "elevation": 171.62554931640625,
+        "longitude": -6.593090949648378
+      },
+      "timestamp": 1648672914067739009,
+      "clipnumber": -1,
+      "label": "RS_ROUNDABOUT",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [
+          "RS_ROUNDABOUT"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 8602
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50064825711145,
+        "elevation": 171.3920135498047,
+        "longitude": -6.593155677554674
+      },
+      "timestamp": 1648672916187731981,
+      "clipnumber": -1,
+      "label": "SIGN_MANDATORY",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [
+          "RS_ROUNDABOUT"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 8672
+    },
+    {
+      "category": "ConditionsRoadStructure",
+      "postion_coordinates": {
+        "latitude": 53.500435614145594,
+        "elevation": 170.91552734375,
+        "longitude": -6.592656920526996
+      },
+      "timestamp": 1648672924438066959,
+      "clipnumber": -1,
+      "label": "RS_ROUNDABOUT",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 8958
+    },
+    {
+      "category": "ConditionsLaneColor",
+      "postion_coordinates": {
+        "latitude": 53.500931019236205,
+        "elevation": 165.60679626464844,
+        "longitude": -6.584550758643723
+      },
+      "timestamp": 1648672955937757968,
+      "clipnumber": -1,
+      "label": "LC_YELLOW_BLUE",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 10110
+    },
+    {
+      "category": "ConditionsLaneMark",
+      "postion_coordinates": {
+        "latitude": 53.500986148523246,
+        "elevation": 164.14971923828125,
+        "longitude": -6.583734693654602
+      },
+      "timestamp": 1648672958690741062,
+      "clipnumber": -1,
+      "label": "LM_DOTS",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 10184
+    },
+    {
+      "category": "ConditionsLaneSurface",
+      "postion_coordinates": {
+        "latitude": 53.505142060094904,
+        "elevation": 157.05567932128906,
+        "longitude": -6.569689018398848
+      },
+      "timestamp": 1648673010459628105,
+      "clipnumber": -1,
+      "label": "LS_HEAD_OR_TAIL_LAMP_REFLECTION",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 12056
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50616522608183,
+        "elevation": 157.2469482421875,
+        "longitude": -6.567420971484702
+      },
+      "timestamp": 1648673019947751045,
+      "clipnumber": -1,
+      "label": "SIGN_WARNING",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 12418
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50665751021877,
+        "elevation": 159.8242645263672,
+        "longitude": -6.566220776877918
+      },
+      "timestamp": 1648673025057730913,
+      "clipnumber": -1,
+      "label": "SIGN_EMBEDDED",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 12598
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50687764480907,
+        "elevation": 160.8648223876953,
+        "longitude": -6.565648834936556
+      },
+      "timestamp": 1648673027529952049,
+      "clipnumber": -1,
+      "label": "SIGN_SPEED_LIMIT_EXPLICIT",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 12670
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50755096710208,
+        "elevation": 163.2620391845703,
+        "longitude": -6.563523851725955
+      },
+      "timestamp": 1648673036877772092,
+      "clipnumber": -1,
+      "label": "SIGN_YIELD",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 13028
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50767635610377,
+        "elevation": 163.93789672851562,
+        "longitude": -6.563018134994332
+      },
+      "timestamp": 1648673039187757015,
+      "clipnumber": -1,
+      "label": "SIGN_MANDATORY",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 13102
+    },
+    {
+      "category": "ConditionsLaneColor",
+      "postion_coordinates": {
+        "latitude": 53.50774578822915,
+        "elevation": 164.2916717529297,
+        "longitude": -6.562717841159146
+      },
+      "timestamp": 1648673040567929029,
+      "clipnumber": -1,
+      "label": "LC_YELLOW_BLUE",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 13136
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50841595321155,
+        "elevation": 164.03366088867188,
+        "longitude": -6.561804363273971
+      },
+      "timestamp": 1648673049827754974,
+      "clipnumber": -1,
+      "label": "SIGN_SPEED_LIMIT_IMPLICIT",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_COUNTRY_ROADS"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 13498
+    },
+    {
+      "category": "ConditionsRoadCategory",
+      "postion_coordinates": {
+        "latitude": 53.50878539168816,
+        "elevation": 162.6571502685547,
+        "longitude": -6.561768108429342
+      },
+      "timestamp": 1648673052540182113,
+      "clipnumber": -1,
+      "label": "RC_COUNTRY_ROADS",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 13568
+    },
+    {
+      "category": "ConditionsRoadCategory",
+      "postion_coordinates": {
+        "latitude": 53.50878539168816,
+        "elevation": 162.6571502685547,
+        "longitude": -6.561768108429342
+      },
+      "timestamp": 1648673052540182113,
+      "clipnumber": -1,
+      "label": "RC_HIGHWAY",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 13568
+    },
+    {
+      "category": "ConditionsLaneColor",
+      "postion_coordinates": {
+        "latitude": 53.5093127331633,
+        "elevation": 160.72540283203125,
+        "longitude": -6.56178145674642
+      },
+      "timestamp": 1648673055827781915,
+      "clipnumber": -1,
+      "label": "LC_YELLOW_BLUE",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 13712
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50952261485012,
+        "elevation": 159.96400451660156,
+        "longitude": -6.56180552953326
+      },
+      "timestamp": 1648673057157759904,
+      "clipnumber": -1,
+      "label": "SIGN_SPEED_LIMIT_EXPLICIT",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 13748
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.50968580799705,
+        "elevation": 159.399169921875,
+        "longitude": -6.561834253968468
+      },
+      "timestamp": 1648673058117815017,
+      "clipnumber": -1,
+      "label": "SIGN_WARNING",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 13785
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.509759745099636,
+        "elevation": 159.19528198242188,
+        "longitude": -6.5618499318517225
+      },
+      "timestamp": 1648673058448801040,
+      "clipnumber": -1,
+      "label": "SIGN_SUPPLEMENTARY",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 13785
+    },
+    {
+      "category": "ConditionsEntryExit",
+      "postion_coordinates": {
+        "latitude": 53.51017278603811,
+        "elevation": 158.5531005859375,
+        "longitude": -6.5619538032527585
+      },
+      "timestamp": 1648673060927764892,
+      "clipnumber": -1,
+      "label": "LANE_ENTRY",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [
+          "LANE_ENTRY"
+        ],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 13888
+    },
+    {
+      "category": "ConditionsEntryExit",
+      "postion_coordinates": {
+        "latitude": 53.51520952380203,
+        "elevation": 160.192138671875,
+        "longitude": -6.562326101266645
+      },
+      "timestamp": 1648673085887778997,
+      "clipnumber": -1,
+      "label": "LANE_ENTRY",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 14793
+    },
+    {
+      "category": "ConditionsRoadStructure",
+      "postion_coordinates": {
+        "latitude": 53.516981121388056,
+        "elevation": 161.2550048828125,
+        "longitude": -6.561474637965423
+      },
+      "timestamp": 1648673095107774972,
+      "clipnumber": -1,
+      "label": "RS_UNDERPASS",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [
+          "RS_UNDERPASS"
+        ],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 15116
+    },
+    {
+      "category": "ConditionsRoadStructure",
+      "postion_coordinates": {
+        "latitude": 53.518218408805694,
+        "elevation": 161.71377563476562,
+        "longitude": -6.560482859289934
+      },
+      "timestamp": 1648673101957804918,
+      "clipnumber": -1,
+      "label": "RS_UNDERPASS",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 15369
+    },
+    {
+      "category": "WeatherCloudiness",
+      "postion_coordinates": {
+        "latitude": 53.520273248552634,
+        "elevation": 167.22463989257812,
+        "longitude": -6.558671842575004
+      },
+      "timestamp": 1648673113817785978,
+      "clipnumber": -1,
+      "label": "CL_PARTIALLY_CLOUDY",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 15801
+    },
+    {
+      "category": "WeatherCloudiness",
+      "postion_coordinates": {
+        "latitude": 53.520273248552634,
+        "elevation": 167.22463989257812,
+        "longitude": -6.558671842575004
+      },
+      "timestamp": 1648673113817785978,
+      "clipnumber": -1,
+      "label": "CL_CLEAR",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_CLEAR"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 15801
+    },
+    {
+      "category": "WeatherCloudiness",
+      "postion_coordinates": {
+        "latitude": 53.52152136798883,
+        "elevation": 171.18490600585938,
+        "longitude": -6.557877693964969
+      },
+      "timestamp": 1648673120837773084,
+      "clipnumber": -1,
+      "label": "CL_CLEAR",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 16048
+    },
+    {
+      "category": "WeatherCloudiness",
+      "postion_coordinates": {
+        "latitude": 53.52152136798883,
+        "elevation": 171.18490600585938,
+        "longitude": -6.557877693964969
+      },
+      "timestamp": 1648673120837773084,
+      "clipnumber": -1,
+      "label": "CL_PARTIALLY_CLOUDY",
+      "clipname_video": "N/A",
+      "state": "activated",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "multi-select",
+      "frame_number": 16048
+    },
+    {
+      "category": "Signs",
+      "postion_coordinates": {
+        "latitude": 53.546424737413425,
+        "elevation": 191.95594787597656,
+        "longitude": -6.554699005912397
+      },
+      "timestamp": 1648673250407768964,
+      "clipnumber": -1,
+      "label": "SIGN_SPECIAL_TSR",
+      "clipname_video": "N/A",
+      "state": "",
+      "conditions": {
+        "WeatherPrecipitation": [
+          "PR_NO"
+        ],
+        "ConditionsEntryExit": [],
+        "ConditionsLaneColor": [
+          "LC_YELLOW_BLUE"
+        ],
+        "ConditionsLaneMark": [
+          "LM_DOTS"
+        ],
+        "ConditionsRoadCategory": [
+          "RC_HIGHWAY"
+        ],
+        "ConditionsRoadStructure": [],
+        "WeatherCloudiness": [
+          "CL_PARTIALLY_CLOUDY"
+        ],
+        "ConditionsRoadState": [
+          "ROAD_DRY"
+        ],
+        "ConditionsRoadType": [
+          "RT_PAVED"
+        ],
+        "WeatherLight": [
+          "LI_DARK_NIGHT"
+        ]
+      },
+      "type": "single",
+      "frame_number": 20696
+    },
+    {
+      "category": "WeatherPrecipitation",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "PR_NO",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "ConditionsLaneColor",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "LC_YELLOW_BLUE",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "ConditionsLaneMark",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "LM_DOTS",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "ConditionsRoadCategory",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "RC_HIGHWAY",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "WeatherCloudiness",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "CL_PARTIALLY_CLOUDY",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "ConditionsRoadState",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "ROAD_DRY",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "ConditionsRoadType",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "RT_PAVED",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    },
+    {
+      "category": "WeatherLight",
+      "postion_coordinates": {
+        "latitude": 53.552519283987955,
+        "elevation": 194.06350708007812,
+        "longitude": -6.555046429839325
+      },
+      "timestamp": 1648673281668169975,
+      "clipnumber": -1,
+      "label": "LI_DARK_NIGHT",
+      "clipname_video": "N/A",
+      "state": "deactivated",
+      "conditions": {},
+      "type": "multi-select",
+      "frame_number": 21812
+    }
+  ]
+}
